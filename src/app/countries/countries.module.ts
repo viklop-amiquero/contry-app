@@ -1,12 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-
+import { ByCapitalPagesComponent } from './pages/by-capital-pages/by-capital-pages.component'
+import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.component'
+import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component'
+import { CountryPageComponent } from './pages/country-page/country-page.component'
+import { CountriesRouting } from './countries-routing.module'
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        ByCapitalPagesComponent,
+        ByCountryPageComponent,
+        ByRegionPageComponent,
+        CountryPageComponent,
+    ],
+    imports: [CommonModule, CountriesRouting],
 })
-export class CountriesModule { }
+export class CountriesModule {}
