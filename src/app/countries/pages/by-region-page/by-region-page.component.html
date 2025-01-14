@@ -6,10 +6,10 @@
     <div class="col">
         <!-- buscador -->
         <shared-search-box
+            placeholder="buscar por región"
             (onValue)="searchByRegion($event)"
         ></shared-search-box>
 
-        <!-- tabla -->
         <countries-country [countries]="countries"></countries-country>
     </div>
 </div>
