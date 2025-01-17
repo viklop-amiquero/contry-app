@@ -12,6 +12,7 @@
         </shared-search-box>
 
         <!-- tabla -->
+        <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
         <countries-country [countries]="countries"></countries-country>
     </div>
 </div>
